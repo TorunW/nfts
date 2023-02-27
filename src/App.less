@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+
+
+.App {
+    background: url(/public/background.avif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    .menubar {
+        background-color: #2e2e2e;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 8px;
+        display: flex;
+        justify-content: space-around;
+        z-index: 100;
+
+        select,
+        input {
+            width: 150px;
+            text-transform: lowercase;
+        }
+    }
+
+    .header-text {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+            color: #546d48;
+            text-shadow: 1px 1px black;
+        }
+
+        span {
+            color: #7ea46d;
+        }
+
+    }
+
+
+    .content-container {
+        background-color: rgb(234, 234, 234);
+        --mask:
+            radial-gradient(206.44px at 50% 283.55px, #ffffff 99%, #ffffff00 101%) calc(50% - 214px) 0/428px 100%,
+            radial-gradient(206.44px at 50% -176.55px, #ffffff00 99%, #ffffff 101%) 50% 107px/428px 100% repeat-x;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+        height: 100%;
+        padding: 32px;
+
+
+
+        .card:first-child {
+            margin-top: 150px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: whitesmoke;
+            gap: 16px;
+            margin-bottom: 32px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+            height: 100%;
+
+
+            h2 {
+                color: rgb(27, 27, 27);
+                text-transform: uppercase;
+            }
+
+
+            .img {
+                width: 100%;
+            }
+        }
+
+    }
+}
